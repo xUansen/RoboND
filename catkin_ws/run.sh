@@ -1,3 +1,3 @@
 catkin_make
 source devel/setup.bash
-roslaunch udacity_bot udacity_world.launch
+roslaunch my_bot udacity_world.launch
