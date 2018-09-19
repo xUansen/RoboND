@@ -3,12 +3,23 @@
 
 ## Packages
 
-Navigation Stack
-```
-1. map_server
-2. 
-3. amcl
-4. move_base: define a goal position for your robot in the map and the robot will navigate to that goal position.
-It utilizes a costmap - where each part of the map is divided into which area is occupied, like walls or obstacles, and which area is unoccupied. As the robot moves around, a local costmap, in relation to the global costmap, keeps getting updated allowing the package to define a continuous path for the robot to move along.
+There are two packages: (1) udacity_bot (2) my_bot
 
+To run each case:
+
+udacity_bot
 ```
+$ roslaunch udacity_bot udacity_world.launch
+$ roslaunch udacity_bot amcl.launch
+$ rosrun udacity_bot navigation_goal
+```
+
+
+my_bot
+```
+$ roslaunch my_bot udacity_world.launch
+$ roslaunch my_bot amcl.launch
+$ rosrun my_bot my_navigation_goal
+```
+
+
